@@ -8,7 +8,6 @@ class TodoApp extends React.Component {
       this.state = { items: [], text: '' };
       this.handleChange = this.handleChange.bind(this);
       this.handleSubmit = this.handleSubmit.bind(this);
-      this.removeTodo = this.removeTodo.bind(this);
     }
   
     render() {
@@ -32,7 +31,7 @@ class TodoApp extends React.Component {
               Ajoutez 
             </button> 
           </form>
-          <TodoList items={this.state.items} removeTodo={this.removeTodo}/>
+          <TodoList items={this.state.items}/>
         </div>
       );
     }
@@ -54,11 +53,6 @@ class TodoApp extends React.Component {
         items: state.items.concat(newItem),
         text: ''
       }));
-    }
-    removeTodo(newItem){
-      this.setState({
-          todo: this.state.todo.filter(this.items !== newItem)
-      })
     }
   }
   
