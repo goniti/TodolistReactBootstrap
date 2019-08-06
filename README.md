@@ -1,4 +1,4 @@
-### `npx create-react-app my-app --typescript`
+`npx create-react-app my-app --typescript`
 
 First, install this package, [ESLint and the necessary plugins.](https://www.npmjs.com/package/eslint-config-react-app)
 
