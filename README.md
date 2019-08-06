@@ -1,4 +1,8 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+npx create-react-app my-app --typescript
+
+First, install this package, [ESLint and the necessary plugins.](https://www.npmjs.com/package/eslint-config-react-app)
+npm install --save-dev eslint-config-react-app babel-eslint@9.x eslint@5.x eslint-plugin-flowtype@2.x eslint-plugin-import@2.x eslint-plugin-jsx-a11y@6.x eslint-plugin-react@7.x eslint-plugin-react-hooks@1.5.0
+
 
 ## Available Scripts
 
