@@ -20,6 +20,6 @@
     "jsx": "preserve"
   },
   "include": [
-    "src"
+    "src", "App.test.js", "serviceWorker.js", "react-app-env.d.ts", "App.jsx", "index.tsx"
   ]
 }
