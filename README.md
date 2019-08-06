@@ -1,4 +1,4 @@
-First, install [CRA] (https://facebook.github.io/create-react-app/docs/adding-typescript), [ESLint](https://www.npmjs.com/package/eslint-config-react-app) and the necessary [plugins.](https://www.npmjs.com/package/classnames)
+First, install [CRA](https://facebook.github.io/create-react-app/docs/adding-typescript), [ESLint](https://www.npmjs.com/package/eslint-config-react-app) and the necessary [plugins.](https://www.npmjs.com/package/classnames)
 
 `npx create-react-app my-app --typescript`
 
