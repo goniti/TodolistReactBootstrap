@@ -1,4 +1,4 @@
-## get started with:
+## Get started with:
 
 ```sh
 # Creates an app called my-app
