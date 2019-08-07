@@ -1,4 +1,4 @@
-First, install [Create React App with typescript](https://facebook.github.io/create-react-app/docs/adding-typescript), [ESLint](https://www.npmjs.com/package/eslint-config-react-app) and the necessary plugins ( [classnames](https://www.npmjs.com/package/classnames) , [uuid4](https://www.npmjs.com/package/uuid4) ).
+First, install [CRA with typescript](https://facebook.github.io/create-react-app/docs/adding-typescript), [ESLint](https://www.npmjs.com/package/eslint-config-react-app) and the necessary plugins ( [classnames](https://www.npmjs.com/package/classnames) , [uuid4](https://www.npmjs.com/package/uuid4) ).
 
 This repo is now deprecated. In the time since it created [TypeScript support](https://facebook.github.io/create-react-app/docs/adding-typescript) is now a default feature of [Create React App](https://facebook.github.io/create-react-app/). 
 
