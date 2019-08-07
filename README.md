@@ -1,4 +1,4 @@
-First, install [CRA with typescript](https://facebook.github.io/create-react-app/docs/adding-typescript), [ESLint](https://www.npmjs.com/package/eslint-config-react-app) and the necessary plugins ( [classnames](https://www.npmjs.com/package/classnames) , [uuid4](https://www.npmjs.com/package/uuid4) ).
+First, 
 
 In the time since it created [TypeScript support](https://facebook.github.io/create-react-app/docs/adding-typescript) is now a default feature of [Create React App](https://facebook.github.io/create-react-app/). 
 
@@ -24,6 +24,9 @@ If you'd like to know more about how to effectively do React with TypeScript, we
 - [React+TypeScript Cheatsheets](https://github.com/typescript-cheatsheets/react-typescript-cheatsheet#reacttypescript-cheatsheets)
 - [Use TypeScript to develop React applications](https://egghead.io/courses/use-typescript-to-develop-react-applications)
 - [Ultimate React Component Patterns with Typescript 2.8](https://levelup.gitconnected.com/ultimate-react-component-patterns-with-typescript-2-8-82990c516935)
+
+
+install [ESLint](https://www.npmjs.com/package/eslint-config-react-app) and the necessary plugins ( [classnames](https://www.npmjs.com/package/classnames) , [uuid4](https://www.npmjs.com/package/uuid4) ).
 
 `npm install --save-dev eslint-config-react-app babel-eslint@9.x eslint@5.x eslint-plugin-flowtype@2.x eslint-plugin-import@2.x eslint-plugin-jsx-a11y@6.x eslint-plugin-react@7.x eslint-plugin-react-hooks@1.5.0`
 
