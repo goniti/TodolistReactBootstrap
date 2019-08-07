@@ -8,7 +8,7 @@ First, install [CRA](https://facebook.github.io/create-react-app/docs/adding-typ
 
 `npm i classnames @types/classnames`
 
-`npm i uuid4 @types/uuid4`
+`npm i uuid4`
 
 
 ## Available Scripts
