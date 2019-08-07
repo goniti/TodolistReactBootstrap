@@ -1,4 +1,4 @@
-First, 
+##First, 
 
 In the time since it created [TypeScript support](https://facebook.github.io/create-react-app/docs/adding-typescript) is now a default feature of [Create React App](https://facebook.github.io/create-react-app/). 
 
@@ -25,6 +25,8 @@ If you'd like to know more about how to effectively do React with TypeScript, we
 - [Use TypeScript to develop React applications](https://egghead.io/courses/use-typescript-to-develop-react-applications)
 - [Ultimate React Component Patterns with Typescript 2.8](https://levelup.gitconnected.com/ultimate-react-component-patterns-with-typescript-2-8-82990c516935)
 
+
+## Next time 
 
 install [ESLint](https://www.npmjs.com/package/eslint-config-react-app) and the necessary plugins ( [classnames](https://www.npmjs.com/package/classnames) , [uuid4](https://www.npmjs.com/package/uuid4) ).
 
