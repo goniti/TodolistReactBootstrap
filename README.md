@@ -1,5 +1,3 @@
-##First, 
-
 In the time since it created [TypeScript support](https://facebook.github.io/create-react-app/docs/adding-typescript) is now a default feature of [Create React App](https://facebook.github.io/create-react-app/). 
 
 This means you can get started with:
@@ -26,11 +24,14 @@ If you'd like to know more about how to effectively do React with TypeScript, we
 - [Ultimate React Component Patterns with Typescript 2.8](https://levelup.gitconnected.com/ultimate-react-component-patterns-with-typescript-2-8-82990c516935)
 
 
-## Next time 
+## ESLint 
 
-install [ESLint](https://www.npmjs.com/package/eslint-config-react-app) and the necessary plugins ( [classnames](https://www.npmjs.com/package/classnames) , [uuid4](https://www.npmjs.com/package/uuid4) ).
-
+install [ESLint](https://www.npmjs.com/package/eslint-config-react-app) 
 `npm install --save-dev eslint-config-react-app babel-eslint@9.x eslint@5.x eslint-plugin-flowtype@2.x eslint-plugin-import@2.x eslint-plugin-jsx-a11y@6.x eslint-plugin-react@7.x eslint-plugin-react-hooks@1.5.0`
+
+## Plugins
+
+the necessary plugins ( [classnames](https://www.npmjs.com/package/classnames) , [uuid4](https://www.npmjs.com/package/uuid4) ).
 
 `npm i classnames @types/classnames`
 
