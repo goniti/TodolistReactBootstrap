@@ -1,6 +1,4 @@
-In the time since it created [TypeScript support](https://facebook.github.io/create-react-app/docs/adding-typescript) is now a default feature of [Create React App](https://facebook.github.io/create-react-app/). 
-
-This means you can get started with:
+## get started with:
 
 ```sh
 # Creates an app called my-app
@@ -13,6 +11,7 @@ npm install --save typescript @types/node @types/react @types/react-dom @types/j
 
 echo "Good to go :tada:"
 ```
+In the time since it created [TypeScript support](https://facebook.github.io/create-react-app/docs/adding-typescript) is now a default feature of [Create React App](https://facebook.github.io/create-react-app/). 
 
 If you'd like to know more about how to effectively do React with TypeScript, we recommend looking at the following:
 
