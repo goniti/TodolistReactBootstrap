@@ -14,9 +14,6 @@ npm install --save typescript @types/node @types/react @types/react-dom @types/j
 echo "Good to go :tada:"
 ```
 
-However, you can
-also use the official documentation in the Create React App website for that. 
-
 If you'd like to know more about how to effectively do React with TypeScript, we recommend looking at the following:
 
 - [React+TypeScript Cheatsheets](https://github.com/typescript-cheatsheets/react-typescript-cheatsheet#reacttypescript-cheatsheets)
