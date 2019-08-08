@@ -1,41 +1,8 @@
-## Get started with:
+## Install Project
 
-```sh
-# Creates an app called my-app
-npx create-react-app my-app --typescript
+you can run:
 
-cd my-app
-
-# Adds the type definitions
-npm install --save typescript @types/node @types/react @types/react-dom @types/jest
-
-echo "Good to go :tada:"
-```
-In the time since it created [TypeScript support](https://facebook.github.io/create-react-app/docs/adding-typescript) is now a default feature of [Create React App](https://facebook.github.io/create-react-app/). 
-
-If you'd like to know more about how to effectively do React with TypeScript, we recommend looking at the following:
-
-- [React+TypeScript Cheatsheets](https://github.com/typescript-cheatsheets/react-typescript-cheatsheet#reacttypescript-cheatsheets)
-- [Use TypeScript to develop React applications](https://egghead.io/courses/use-typescript-to-develop-react-applications)
-- [Ultimate React Component Patterns with Typescript 2.8](https://levelup.gitconnected.com/ultimate-react-component-patterns-with-typescript-2-8-82990c516935)
-
-
-## ESLint 
-
- [ESLint](https://www.npmjs.com/package/eslint-config-react-app) 
-
-```sh
-npm install --save-dev eslint-config-react-app babel-eslint@9.x eslint@5.x eslint-plugin-flowtype@2.x eslint-plugin-import@2.x eslint-plugin-jsx-a11y@6.x eslint-plugin-react@7.x eslint-plugin-react-hooks@1.5.0
-```
-
-## Plugins
-
-the necessary plugins ( [classnames](https://www.npmjs.com/package/classnames) , [uuid4](https://www.npmjs.com/package/uuid4) ).
-
-`npm i classnames @types/classnames`
-
-`npm i uuid4`
-
+### `npm i`
 
 ## Available Scripts
 
