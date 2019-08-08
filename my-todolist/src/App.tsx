@@ -21,7 +21,10 @@ interface TodoListState {
   filter: FilterOptions;
 }
 
-export default class App extends React.Component<TodoListProps, TodoListState> {
+export default class App extends React.PureComponent<
+  TodoListProps,
+  TodoListState
+> {
   private store: TodoStore = new TodoStore();
   private toggleItem: (item: Todo) => void;
   private removeItem: (item: Todo) => void;
@@ -66,6 +69,7 @@ export default class App extends React.Component<TodoListProps, TodoListState> {
 
   render() {
     let { items, label, filter } = this.state;
+    let filtered = items.filter(Filters[filter]);
     let remaining = this.remaining;
     let completed = this.completed;
     return (
@@ -92,7 +96,7 @@ export default class App extends React.Component<TodoListProps, TodoListState> {
           )}
           <label htmlFor="toggle-all">All as complete</label>
           <ul className="todo-list">
-            {items.map(item => {
+            {filtered.map(item => {
               return (
                 <TodoItem
                   item={item}
@@ -111,10 +115,7 @@ export default class App extends React.Component<TodoListProps, TodoListState> {
               <strong>{remaining}</strong>
               <span> </span>
               <span>remaining</span>
-              <span>
-                {" "}
-                task{remaining > 1 && "s"} {filter}
-              </span>
+              <span> task{remaining > 1 && "s"}</span>
             </span>
           )}
           <ul className="filters">
