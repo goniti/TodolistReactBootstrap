@@ -3,8 +3,9 @@ import uuidv4 from "uuidv4";
 declare type ChangeCallback = ( store: TodoStore ) => void
 
 export default class TodoStore {
+  public items: Todo[] = [];
   private callbacks: ChangeCallback[] = []
-  public todos: Todo[] = [];
+
 
   inform () {
     this.callbacks.forEach( cb => cb( this ) )
@@ -15,40 +16,40 @@ export default class TodoStore {
   }
 
   handleSubmit ( title: string ): void {
-    this.todos = [
+    this.items = [
       {
         id: uuidv4(),
         title: title,
         completed: false
       },
-      ...this.todos
+      ...this.items
     ]
     this.inform()
   }
 
-  handleUpdate ( todo: Todo, title: string ): void {
-    this.todos = this.todos.map( t => ( t !== todo ? { ...t, title } : t ) );
+  handleUpdate ( item: Todo, title: string ): void {
+    this.items = this.items.map( t => ( t === item ? { ...t, title } : t ) );
     this.inform()
   }
 
-  handleToggle ( todo: Todo ): void {
-    this.todos = this.todos.map( t => ( t !== todo ? { ...t, completed: !t.completed } : t ) );
+  handleToggle ( item: Todo ): void {
+    this.items = this.items.map( t => ( t === item ? { ...t, completed: !t.completed } : t ) );
     this.inform()
   }
 
   handleToggleAll ( completed = true ) {
-    this.todos = this.todos.map( t =>
+    this.items = this.items.map( t =>
       completed !== t.completed ? { ...t, completed } : t
     );
     this.inform()
   }
 
-  handleRemove ( todo: Todo ): void {
-    this.todos = this.todos.filter( t => t !== todo );
+  handleRemove ( item: Todo ): void {
+    this.items = this.items.filter( t => t !== item );
     this.inform()
   }
   handleClearCompleted (): void {
-    this.todos = this.todos.filter( t => !t.completed );
+    this.items = this.items.filter( t => !t.completed );
     this.inform()
   }
 }

@@ -113,6 +113,9 @@ body {
 }
 
 .toggle-all {
+  margin-top: -2.4rem;
+  margin-left: 1.2rem;
+  z-index: 100;
   text-align: center;
   border: none;
   /* Mobile Safari */
