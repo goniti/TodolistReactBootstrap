@@ -1,7 +1,5 @@
 ## Install Project
 
-you can run:
-
 ### `npm i`
 
 ## Available Scripts
