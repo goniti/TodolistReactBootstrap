@@ -15,6 +15,9 @@ export default class TodoStore {
 	}
 
 	handleSubmit(title: string) : void {
+		if (!title) {
+			return
+		}
 		this.items = [
 			{
 				id: uuidv4(),
