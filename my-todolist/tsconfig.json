@@ -17,9 +17,15 @@
     "resolveJsonModule": true,
     "isolatedModules": true,
     "noEmit": true,
-    "jsx": "preserve"
+    "jsx": "react",
+    "noFallthroughCasesInSwitch": true
   },
   "include": [
-    "src", "App.test.js", "serviceWorker.js", "react-app-env.d.ts", "App.jsx", "index.tsx"
+    "src",
+    "App.test.js",
+    "serviceWorker.js",
+    "react-app-env.d.ts",
+    "App.jsx",
+    "index.tsx"
   ]
 }
