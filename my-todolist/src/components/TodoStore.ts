@@ -6,15 +6,15 @@ export default class TodoStore {
 	public items: Todo[] = []
 	private callbacks: ChangeCallback[] = []
 
-	inform() {
+	inform() : void {
 		this.callbacks.forEach((cb) => cb(this))
 	}
 
-	handleChange(cb: ChangeCallback) {
+	handleChange(cb: ChangeCallback) : void {
 		this.callbacks.push(cb)
 	}
 
-	handleSubmit(title: string): void {
+	handleSubmit(title: string) : void {
 		this.items = [
 			{
 				id: uuidv4(),
@@ -26,7 +26,7 @@ export default class TodoStore {
 		this.inform()
 	}
 
-	handleUpdate(item: Todo, title: string): void {
+	handleUpdate(item: Todo, title: string) : void {
 		this.items = this.items.map((t) => (t === item ? { ...t, title } : t))
 		this.inform()
 	}
@@ -38,7 +38,7 @@ export default class TodoStore {
 		this.inform()
 	}
 
-	handleToggleAll(completed = true) {
+	handleToggleAll(completed = true) : void {
 		this.items = this.items.map((t) =>
 			completed !== t.completed ? { ...t, completed } : t
 		)

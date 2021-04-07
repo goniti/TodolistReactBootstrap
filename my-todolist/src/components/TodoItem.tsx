@@ -23,8 +23,8 @@ export default class TodoItem extends React.PureComponent<Props, State> {
 		}
 	}
 
-	render() {
-		const { item, onDestroy, onToggle } = this.props
+	render() : JSX.Element {
+		const { item } = this.props
 		const { editing, title } = this.state
 		return (
 			<li className={cx({ completed: item.completed, editing })}>
@@ -49,24 +49,24 @@ export default class TodoItem extends React.PureComponent<Props, State> {
 			</li>
 		)
 	}
-	toggle = () => {
+	toggle = () : void => {
 		this.props.onToggle(this.props.item)
 	}
 
-	destroy = () => {
+	destroy = () : void => {
 		this.props.onDestroy(this.props.item)
 	}
 
-	edit = (e: React.MouseEvent<HTMLLabelElement>) => {
+	edit = () : void =>  {
 		this.setState({ editing: true, title: this.props.item.title })
 	}
 
-	handleBlur = () => {
+	handleBlur = () : void => {
 		this.props.onUpdate(this.props.item, this.state.title)
 		this.setState({ editing: false })
 	}
 
-	handleKeyDown = (e: React.KeyboardEvent<HTMLInputElement>) => {
+	handleKeyDown = (e: React.KeyboardEvent<HTMLInputElement>) : void => {
 		if (e.key === 'Escape') {
 			this.setState({ editing: false })
 		} else if (e.key === 'Enter') {
@@ -74,7 +74,7 @@ export default class TodoItem extends React.PureComponent<Props, State> {
 		}
 	}
 
-	handleInput = (e: React.FormEvent<HTMLInputElement>) => {
+	handleInput = (e: React.FormEvent<HTMLInputElement>) : void => {
 		this.setState({ title: (e.target as HTMLInputElement).value })
 	}
 }
